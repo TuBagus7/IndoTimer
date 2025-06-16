@@ -1,6 +1,6 @@
 Forked from https://playground.arduino.cc/Code/SimpleTimer/
 
-IndoTimer
+# IndoTimer
 IndoTimer adalah library Arduino berbasis millis() yang dirancang untuk mempermudah pemrograman non-blocking timer dengan pendekatan yang ramah bagi pengguna Indonesia. Seluruh fungsi dan dokumentasi ditulis dalam bahasa Indonesia agar lebih mudah dipahami oleh pelajar, pemula, dan praktisi IoT lokal.
 
 🏹 Kenapa Library Ini Dibuat?
