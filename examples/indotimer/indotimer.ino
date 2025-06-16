@@ -40,5 +40,5 @@ void setup() {
 }
 
 void loop() {
-  waktu.jalankan(); // aktifkan pengecekan timer setiap loop
+  waktu.run(); // aktifkan pengecekan timer setiap loop
 }

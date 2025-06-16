@@ -1,15 +1,13 @@
-// Panggil library buatan sendiri
+// Panggil library
 #include <IndoTimer.h>
 
-// Buat objek timer
+//objek timer
 IndoTimer waktu;
 
-// Fungsi ini akan menyalakan dan mematikan LED bergantian
+// Fungsi ini untuk menghidupkan dan  mematikan LED bergantian
 void kedipLED() {
-  // Baca status LED sekarang (nyala atau mati)
-  int statusSekarang = digitalRead(LED_BUILTIN);
+    int statusSekarang = digitalRead(LED_BUILTIN);
 
-  // Kalau nyala, matikan. Kalau mati, nyalakan.
   if (statusSekarang == HIGH) {
     digitalWrite(LED_BUILTIN, LOW);
   } else {
@@ -21,11 +19,9 @@ void setup() {
   // Atur pin LED sebagai output
   pinMode(LED_BUILTIN, OUTPUT);
 
-  // Jalankan fungsi kedipLED setiap 1000 milidetik (1 detik)
   waktu.aturInterval(1000, kedipLED);
 }
 
 void loop() {
-  // Jalankan timer setiap loop
   waktu.jalankan();
 }

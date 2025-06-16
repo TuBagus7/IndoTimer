@@ -12,7 +12,7 @@ class IndoTimer {
     int aturInterval(unsigned long jeda, fungsi_timer fungsi);
     int aturSekali(unsigned long jeda, fungsi_timer fungsi);
     void hapusTimer(int id);
-    void jalankan();
+    void run();
 
   private:
     static const int MAKS_TIMER = 10;
